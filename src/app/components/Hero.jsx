@@ -1,7 +1,8 @@
 import React from 'react';
 import ProfileImge from '../../../public/profile.jpg';
 import Image from 'next/image';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -23,8 +24,19 @@ const Hero = () => {
             <p className='font-bold text-xl'>Ikeja, Lagos</p>
           </div>
 
-          <div>
-            <FaGithub />
+          <div className='flex flex-row gap-3 mt-3'>
+            <Link href=''>
+              <FaTwitter className='size-10 border p-2 ' />
+            </Link>
+            <Link href=''>
+              <FaLinkedin className='size-10 border p-2 ' />
+            </Link>
+            <Link href=''>
+              <FaGithub className='size-10 border p-2 ' />
+            </Link>
+            <Link href=''>
+              <FaInstagram className='size-10 border p-2 ' />
+            </Link>
           </div>
         </div>
       </div>
