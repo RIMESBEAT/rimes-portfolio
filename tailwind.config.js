@@ -21,6 +21,7 @@ module.exports = {
         redAccent: '#d7263d',
         whiteAccent: '#f5f3f5',
       },
+     
     },
   },
   darkMode: 'class',
