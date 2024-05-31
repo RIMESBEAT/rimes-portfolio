@@ -13,16 +13,16 @@ import Link from 'next/link';
 import { Tooltip } from '@nextui-org/react';
 import {motion} from "framer-motion"
 
-const Hero = () => {
+const Profile = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      className='fixed  h-screen  '
+      className=' h-screen  '
     >
-      <div className='  border  rounded-xl hover:border-redAccent  backdrop:blur-lg bg-white/10 max-w-96 flex justify-center items-start'>
+      <div className='  border  rounded-xl hover:border-redAccent  backdrop:blur-lg bg-white/10 flex justify-center items-start'>
         <div className='p-4 overflow-y-auto'>
-          <p className='text-4xl mb-8 font-black'>Elijah Isaiah</p>
+          <p className='text-2xl mb-8 font-black'>Elijah Isaiah</p>
 
           <Image
             className='w-64 h-44 object-cover object-top rounded-xl'
@@ -74,4 +74,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Profile;

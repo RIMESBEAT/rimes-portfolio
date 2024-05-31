@@ -2,7 +2,9 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Header from './components/Header';
-import Hero from './components/Hero';
+import Profile from './components/Profile';
+import About from './components/About';
+import MyProject from './components/MyProject';
 
 export default function Home() {
   return (
@@ -10,8 +12,17 @@ export default function Home() {
       <section>
         <Header />
 
+        <div className='flex flex-row gap-10'>
+          <div>
+            <Profile />
+          </div>
+          <div>
+            <About />
+          </div>
+        </div>
+
         <div>
-          <Hero />
+          <MyProject />
         </div>
       </section>
     </main>
