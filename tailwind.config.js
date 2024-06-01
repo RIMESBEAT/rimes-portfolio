@@ -21,7 +21,9 @@ module.exports = {
         redAccent: '#d7263d',
         whiteAccent: '#f5f3f5',
       },
-     
+      screens: {
+        'xs': { raw: '(max-width: 550px)' },
+      },
     },
   },
   darkMode: 'class',

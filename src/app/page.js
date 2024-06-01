@@ -9,16 +9,21 @@ import Skills from './components/Skills';
 
 export default function Home() {
   return (
-    <main className='  bg-grayAccent px-20'>
+    <main className='  bg-grayAccent px-3 '>
       <section>
-        <div>
-          <About />
-        </div>{' '}
-        <div>
-          <MyProject />
-        </div>
-        <div>
-          <Skills />
+        <div className='block md:flex'>
+          <Profile />
+          <div className='md:ml-10 min-h-screen'>
+            <div>
+              <About />
+            </div>
+            <div>
+              <MyProject />
+            </div>
+            <div>
+              <Skills />
+            </div>
+          </div>
         </div>
       </section>
     </main>
