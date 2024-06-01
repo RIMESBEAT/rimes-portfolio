@@ -13,19 +13,19 @@ const MyProject = () => {
       description:
         'I created this simple website for Shineway Healthcare with translation features.',
       tools: ['Nextjs', 'TailwindCss', 'Aceternity UI', 'Sanity', 'I18next'],
-      imgUrl: require('../../public/shineway.png'),
+      imgUrl: require('../../../public/shineway.png'),
       link: 'https://www.shineway.health',
     },
     {
       id: 2,
       title: 'fasthelpme loan app',
-      imgUrl: require('../../public/fastapp.jpg'),
+      imgUrl: require('../../../public/fastapp.jpg'),
       link: 'https://bit.ly/fasthelpme-apk',
     },
     {
       id: 2,
       title: 'fasthelpme',
-      imgUrl: require('../../public/fasthelp.png'),
+      imgUrl: require('../../../public/fasthelp.png'),
       link: 'https://www.fasthelpme.com',
     },
   ];

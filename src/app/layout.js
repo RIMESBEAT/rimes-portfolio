@@ -1,6 +1,8 @@
 import { Roboto, Fraunces } from 'next/font/google';
 import './globals.css';
 import { NextUIProvider } from '@nextui-org/react';
+import Profile from './components/Profile';
+import Header from './components/Header';
 
 const queenFont = Fraunces({
   weight: ['100', '300', '400', '500', '700', '900'],
@@ -16,7 +18,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en' suppressHydrationWarning>
       <body className={queenFont.className}>
-        <NextUIProvider>{children}</NextUIProvider>
+        <NextUIProvider>
+          <div className=' bg-grayAccent px-20'>
+            <Header />
+            <div className='flex min-h-screen '>
+              <div className=''>
+                <Profile />
+              </div>
+              <div className=''>{children}</div>
+            </div>
+          </div>
+        </NextUIProvider>
       </body>
     </html>
   );

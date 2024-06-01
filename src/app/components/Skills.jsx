@@ -1,105 +1,123 @@
 import { Tooltip } from '@nextui-org/react';
 import Image from 'next/image';
 import React from 'react';
+import {
+  FaAtom,
+  FaBootstrap,
+  FaCss3Alt,
+  FaHtml5,
+  FaNodeJs,
+  FaReact,
+} from 'react-icons/fa';
+import { IoLogoJavascript } from 'react-icons/io5';
+import {
+  SiAppwrite,
+  SiExpress,
+  SiMongodb,
+  SiNextui,
+  SiSanity,
+  SiTailwindcss,
+} from 'react-icons/si';
+import { TbBrandNextjs, TbBrandReactNative } from 'react-icons/tb';
 
 const Skills = () => {
-  const tools = [
+  const skillSet = [
     {
-      tool: 'html-5',
-      name: 'HTML',
+      title: 'HTML',
+      icon: (
+        <FaHtml5 className='p-1 border hover:border-redAccent size-20 rounded-md hover:text-redAccent' />
+      ),
     },
     {
-      tool: 'css3',
-      name: 'CSS',
+      title: 'CSS',
+      icon: (
+        <FaCss3Alt className='p-1 border hover:border-redAccent size-20 rounded-md hover:text-redAccent' />
+      ),
     },
     {
-      tool: 'javascript-logo',
-      name: 'Javascript',
+      title: 'Javascript',
+      icon: (
+        <IoLogoJavascript className='p-1 border hover:border-redAccent size-20 rounded-md hover:text-redAccent' />
+      ),
     },
     {
-      tool: 'bootstrap',
-      name: 'Bootstrap',
+      title: 'Boostrap',
+      icon: (
+        <FaBootstrap className='p-1 border hover:border-redAccent size-20 rounded-md hover:text-redAccent' />
+      ),
     },
     {
-      tool: 'tailwind_css',
-      name: 'TailwindCss',
+      title: 'NodeJS',
+      icon: (
+        <FaNodeJs className='p-1 border hover:border-redAccent size-20 rounded-md hover:text-redAccent' />
+      ),
     },
     {
-      tool: 'react-native',
-      name: 'Reactjs/ReactNative',
+      title: 'ExpressJS',
+      icon: (
+        <SiExpress className='p-1 border hover:border-redAccent size-20 rounded-md hover:text-redAccent' />
+      ),
     },
     {
-      tool: 'nextjs',
-      name: 'NextJS',
+      title: 'MongoDB',
+      icon: (
+        <SiMongodb className='p-1 border hover:border-redAccent size-20 rounded-md hover:text-redAccent' />
+      ),
     },
     {
-      tool: 'node-js',
-      name: 'NodeJS',
+      title: 'ReactJS',
+      icon: (
+        <FaReact className='p-1 border hover:border-redAccent size-20 rounded-md hover:text-redAccent' />
+      ),
     },
     {
-      tool: 'express-js',
-      name: 'ExpressJs',
-    },
-
-    {
-      tool: 'mongo-db',
-      name: 'MongoDB',
+      title: 'ReactNative',
+      icon: (
+        <TbBrandReactNative className='p-1 border hover:border-redAccent size-20 rounded-md hover:text-redAccent' />
+      ),
     },
     {
-      tool: 'github',
-      name: 'Github',
+      title: 'NextJS',
+      icon: (
+        <TbBrandNextjs className='p-1 border hover:border-redAccent size-20 rounded-md hover:text-redAccent' />
+      ),
+    },
+    {
+      title: 'TailwindCSS',
+      icon: (
+        <SiTailwindcss className='p-1 border hover:border-redAccent size-20 rounded-md hover:text-redAccent' />
+      ),
+    },
+    {
+      title: 'TailwindCSS',
+      icon: (
+        <SiSanity className='p-1 border hover:border-redAccent size-20 rounded-md hover:text-redAccent' />
+      ),
+    },
+    {
+      title: 'TailwindCSS',
+      icon: (
+        <SiAppwrite className='p-1 border hover:border-redAccent size-20 rounded-md hover:text-redAccent' />
+      ),
+    },
+    {
+      title: 'TailwindCSS',
+      icon: (
+        <SiNextui className='p-1 border hover:border-redAccent size-20 rounded-md hover:text-redAccen hover:text-redAccent' />
+      ),
     },
   ];
   return (
-    <div className='flex flex-col justify-center items-center'>
-      <h1 className='  bg-darkPurpleAccent/50 w-fit p-1 rounded-md font-bold text-sm text-whiteAccent my-4'>
-        My Skills
-      </h1>
-      <p className='capitalize text-2xl font-bold w-full md:w-1/2 text-center  text-darkPurpleAccent'>
+    <div className=''>
+      <div className='flex gap-2 flex-row items-center mx-auto md:mx-0  bg-redAccent w-fit p-1 rounded-md font-bold text-sm text-whiteAccent mt-10'>
+        <FaAtom />
+        <h1 className=' '>Skills</h1>
+      </div>
+      <p className='capitalize text-2xl font-bold w-full  text-center  text-darkPurpleAccent'>
         The Skills, tools and technology i am really good at:
       </p>
 
-      <div className='flex gap-2 w-full justify-center flex-wrap mt-10 items-center '>
-        {tools.map((item, index) => (
-          <div className=' p-1 rounded-md' key={index}>
-            <Tooltip
-              content={item.name}
-              color='secondary'
-              className='capitalize'
-            >
-              <Image
-                className='w-20'
-                width={200}
-                height={200}
-                src={`https://img.icons8.com/nolan/700/${item.tool}.png`}
-              />
-            </Tooltip>
-          </div>
-        ))}
-        <div className='  p-4 rounded-md flex items-center gap-8'>
-          <Tooltip
-            content='Appwrite'
-            color='secondary'
-            className='capitalize  '
-          >
-            <Image
-              className='w-[4rem]'
-              width={200}
-              height={200}
-              src={`https://appwrite.io/assets/logomark/logo.png`}
-            />
-          </Tooltip>
-
-          <Tooltip content='Sanity' color='secondary' className='capitalize  '>
-            <Image
-              className='w-[4rem]'
-              width={200}
-              height={200}
-              src={`https://asset.brandfetch.io/id9jKycKu7/idBdbt2lT-.jpeg?updated=1709116177659`}
-            />
-          </Tooltip>
-        </div>
-      </div>
+      <div className='flex gap-2 w-full justify-center flex-wrap mt-10 items-center '></div>
     </div>
   );
 };

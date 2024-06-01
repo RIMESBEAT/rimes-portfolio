@@ -5,24 +5,20 @@ import Header from './components/Header';
 import Profile from './components/Profile';
 import About from './components/About';
 import MyProject from './components/MyProject';
+import Skills from './components/Skills';
 
 export default function Home() {
   return (
-    <main className=' min-h-screen bg-grayAccent px-20'>
+    <main className='  bg-grayAccent px-20'>
       <section>
-        <Header />
-
-        <div className='flex flex-row gap-10'>
-          <div>
-            <Profile />
-          </div>
-          <div>
-            <About />
-          </div>
-        </div>
-
+        <div>
+          <About />
+        </div>{' '}
         <div>
           <MyProject />
+        </div>
+        <div>
+          <Skills />
         </div>
       </section>
     </main>

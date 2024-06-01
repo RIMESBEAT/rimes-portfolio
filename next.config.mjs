@@ -10,6 +10,14 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'icons8.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'appwrite.io',
+      },
+      {
+        protocol: 'https',
+        hostname: 'appwrite.io',
+      },
     ],
   },
 };

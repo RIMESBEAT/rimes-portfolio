@@ -4,7 +4,7 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <nav className='flex justify-between sticky top-1  py-5 w-full bg-grayAccent'>
+    <nav className='flex justify-between sticky -top-1  py-5 w-full bg-grayAccent'>
       <div className=' text-balance text-black'>
         <h1 className=' font-extrabold text-xl text-redAccent'>
           Elijah

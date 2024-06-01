@@ -20,7 +20,7 @@ const Profile = () => {
       whileInView={{ opacity: 1 }}
       className=' h-screen  '
     >
-      <div className='  border  rounded-xl hover:border-redAccent  backdrop:blur-lg bg-white/10 flex justify-center items-start'>
+      <div className='  border  rounded-xl hover:border-redAccent  backdrop:blur-lg bg-white/10 w-max flex justify-center items-start'>
         <div className='p-4 overflow-y-auto'>
           <p className='text-2xl mb-8 font-black'>Elijah Isaiah</p>
 
