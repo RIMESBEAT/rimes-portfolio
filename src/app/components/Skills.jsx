@@ -1,8 +1,8 @@
+'use client';
 import { Tooltip } from '@nextui-org/react';
 import Image from 'next/image';
 import React from 'react';
 import {
-
   FaAtom,
   FaBootstrap,
   FaCss3Alt,
@@ -20,8 +20,13 @@ import {
   SiTailwindcss,
 } from 'react-icons/si';
 import { TbBrandNextjs, TbBrandReactNative } from 'react-icons/tb';
+import { motion, useAnimation } from 'framer-motion';
+
+import { useInView } from 'react-intersection-observer';
+import { useEffect, useState } from 'react';
 
 const Skills = () => {
+ 
   const skillSet = [
     {
       title: 'HTML',
@@ -108,32 +113,36 @@ const Skills = () => {
       ),
     },
   ];
+
+  
   return (
     <div className='h-fullgrid-cols-1'>
-      <div className='flex gap-2 flex-row items-center mx-auto md:mx-0  bg-redAccent w-fit p-1 rounded-md font-bold text-sm text-whiteAccent mt-10'>
+      <motion.div
+        
+        className='flex gap-2 flex-row items-center mx-auto md:mx-0  bg-redAccent w-fit p-1 rounded-md font-bold text-sm text-whiteAccent mt-10'
+      >
         <FaAtom />
-        <Tooltip content='jrkrjfkj'>
-           <h1 className=' '>Skills</h1>
-      </Tooltip>
-       
-      </div>
+
+        <h1 className=' '>Skills</h1>
+      </motion.div>
       <p className='capitalize text-2xl  mt-10 font-bold w-full  '>
         The Skills, tools and technology i am really good at:
       </p>
 
-      <div className='flex gap-2 w-full justify-center flex-wrap py-10 items-center '>
+      <motion.div
+       
+        className='flex gap-2 w-full justify-center flex-wrap py-10 items-center '
+      >
         {skillSet.map((item) => {
           return (
             <div key={item.title}>
               <Tooltip content={item.title}>
-                
                 <p>{item.icon}</p>
-              
               </Tooltip>
             </div>
           );
         })}
-      </div>
+      </motion.div>
     </div>
   );
 };

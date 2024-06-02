@@ -5,6 +5,7 @@ import React from 'react';
 
 import Link from 'next/link';
 import { FaAtom } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const MyProject = () => {
   const project = [
@@ -25,7 +26,7 @@ const MyProject = () => {
     {
       id: 3,
       title: 'fasthelpme',
-      tools: ['Nextjs', 'TailwindCss',  'Sanity', ],
+      tools: ['Nextjs', 'TailwindCss', 'Sanity'],
       imgUrl: require('../../../public/fasthelp.png'),
 
       link: 'https://www.fasthelpme.com',
@@ -49,6 +50,7 @@ const MyProject = () => {
           >
             <Link href={item.link} className=' ' key={item.id}>
               <Card
+                whileHover={{ scale: 1.2 }}
                 isFooterBlurred
                 className='w-full h-[300px] col-span-12 sm:col-span-7'
               >
@@ -57,14 +59,24 @@ const MyProject = () => {
                     {item.title}
                   </h4>
                 </CardHeader>
-                <Image
-                  width={750}
-                  height={1000}
-                  removeWrapper
-                  alt={item.title}
-                  className='z-0 w-full h-full object-cover'
-                  src={item.imgUrl}
-                />
+                <motion.div className='h-full'
+                  whileHover={{ scale: 1.2, animationDelay:".5s" }}
+                  whileTap={{ scale: 1.1 }}
+                  drag='x'
+                  
+                  dragConstraints={{ left: -100, right: 100 }}
+                >
+                  <Image
+                   
+                    width={750}
+                    height={1000}
+                    removeWrapper
+                    alt={item.title}
+                    className='z-0 w-full h-full object-cover'
+                    src={item.imgUrl}
+                  />
+                </motion.div>
+
                 <CardFooter className='absolute bg-black/70 bottom-0 z-10 border-t-1 border-default-600 '>
                   <div className='gap-2 items-center'>
                     <p className='text-tiny text-white/60 mb-2'>
