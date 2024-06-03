@@ -7,10 +7,11 @@ import About from './components/About';
 import MyProject from './components/MyProject';
 import Skills from './components/Skills';
 import ContactMe from './components/ContactMe';
+import SubNav from './components/SubNav';
 
 export default function Home() {
   return (
-    <main className='  bg-grayAccent px-3 '>
+    <div className=' relative  bg-grayAccent px-3 '>
       <section>
         <div className='block md:flex'>
           <Profile />
@@ -29,7 +30,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </section>{' '}
+      <div className='w-full  flex items-center relative justify-center bg-black'>
+        <div className='relative border   bg-black'>
+          <SubNav />
+        </div>
+      </div>
+    </div>
   );
 }

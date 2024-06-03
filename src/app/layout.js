@@ -3,6 +3,7 @@ import './globals.css';
 import { NextUIProvider } from '@nextui-org/react';
 import Profile from './components/Profile';
 import Header from './components/Header';
+import SubNav from './components/SubNav';
 
 const queenFont = Fraunces({
   weight: ['100', '300', '400', '500', '700', '900'],
@@ -23,6 +24,8 @@ export default function RootLayout({ children }) {
             <Header />
 
             <main className=''>{children}</main>
+
+           
           </div>
         </NextUIProvider>
       </body>

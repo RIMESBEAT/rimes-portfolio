@@ -24,9 +24,9 @@ import { motion, useAnimation } from 'framer-motion';
 
 import { useInView } from 'react-intersection-observer';
 import { useEffect, useState } from 'react';
+import FadeInSection from './animation/FadeInOut';
 
 const Skills = () => {
- 
   const skillSet = [
     {
       title: 'HTML',
@@ -114,35 +114,32 @@ const Skills = () => {
     },
   ];
 
-  
   return (
     <div className='h-fullgrid-cols-1'>
-      <motion.div
-        
-        className='flex gap-2 flex-row items-center mx-auto md:mx-0  bg-redAccent w-fit p-1 rounded-md font-bold text-sm text-whiteAccent mt-10'
-      >
-        <FaAtom />
+      <FadeInSection>
+        <div className='flex gap-2 flex-row items-center mx-auto md:mx-0  bg-redAccent w-fit p-1 rounded-md font-bold text-sm text-whiteAccent mt-10'>
+          <FaAtom />
 
-        <h1 className=' '>Skills</h1>
-      </motion.div>
-      <p className='capitalize text-2xl  mt-10 font-bold w-full  '>
-        The Skills, tools and technology i am really good at:
-      </p>
+          <h1 className=' '>Skills</h1>
+        </div>
+        <p className='capitalize text-2xl  mt-10 font-bold w-full  '>
+          The Skills, tools and technology i am really good at:
+        </p>
+      </FadeInSection>
 
-      <motion.div
-       
-        className='flex gap-2 w-full justify-center flex-wrap py-10 items-center '
-      >
-        {skillSet.map((item) => {
-          return (
-            <div key={item.title}>
-              <Tooltip content={item.title}>
-                <p>{item.icon}</p>
-              </Tooltip>
-            </div>
-          );
-        })}
-      </motion.div>
+      <FadeInSection>
+        <div className='flex gap-2 w-full justify-center flex-wrap py-10 items-center '>
+          {skillSet.map((item) => {
+            return (
+              <div key={item.title}>
+                <Tooltip content={item.title}>
+                  <p>{item.icon}</p>
+                </Tooltip>
+              </div>
+            );
+          })}
+        </div>
+      </FadeInSection>
     </div>
   );
 };
