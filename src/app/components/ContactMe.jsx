@@ -5,20 +5,20 @@ import { FaAtom } from 'react-icons/fa';
 
 const ContactMe = () => {
   return (
-    <div className='xs:block flex gap-4 lg:block justify-center items-center my-10'>
+    <div className='xs:block w-full md:flex gap-4 lg:flex justify-center items-start my-10'>
       <FadeInSection>
         <div className='flex gap-2 flex-row items-center mx-auto md:mx-0  bg-redAccent w-fit p-1 rounded-md font-bold text-sm text-whiteAccent mt-10'>
           <FaAtom />
           <h1 className=' '>Contact Me</h1>
         </div>
-        <div className='flex-1'>
-          <p className=' font-bold text-2xl w-full  text-center lg:text-left  text-darkredAccent mb-10 capitalize'>
+        <div className=' '>
+          <p className=' font-bold text-2xl  w-1/2   text-center lg:text-left  text-darkredAccent mb-10 capitalize'>
             Let's discuss on something cool together
           </p>
         </div>
       </FadeInSection>
       <FadeInSection>
-        <div className='flex-1 md:w-full'>
+        <div className=' w-full '>
           <form>
             <Input
               isRequired

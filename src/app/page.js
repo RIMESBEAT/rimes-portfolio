@@ -13,9 +13,13 @@ export default function Home() {
   return (
     <div className=' relative  bg-grayAccent px-3 '>
       <section>
-        <div className='block md:flex'>
-          <Profile />
+        <div className='block md:flex  h-full'>
+          <div className=' '>
+            <Profile />
+          </div>
+
           <div className='md:ml-10 min-h-screen'>
+            
             <div>
               <About />
             </div>

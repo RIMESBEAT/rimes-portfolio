@@ -20,12 +20,10 @@ export default function RootLayout({ children }) {
     <html lang='en' suppressHydrationWarning>
       <body className={queenFont.className}>
         <NextUIProvider>
-          <div className=' overflow-x-hidden '>
+          <div className='  min-w-full'>
             <Header />
 
             <main className=''>{children}</main>
-
-           
           </div>
         </NextUIProvider>
       </body>
