@@ -11,9 +11,9 @@ const ContactMe = () => {
           <FaAtom />
           <h1 className=' '>Contact Me</h1>
         </div>
-        <div className=' '>
-          <p className=' font-bold text-2xl  w-1/2   text-center lg:text-left  text-darkredAccent mb-10 capitalize'>
-            Let's discuss on something cool together
+        <div className='flex-1'>
+          <p className=' font-bold text-2xl w-full  text-center lg:text-left  text-darkredAccent mb-10 capitalize'>
+            Let&rsquo;s discuss on something cool together
           </p>
         </div>
       </FadeInSection>
