@@ -11,7 +11,7 @@ import SubNav from './components/SubNav';
 
 export default function Home() {
   return (
-    <div className=' relative  bg-grayAccent px-3 '>
+    <div id='#' className=' relative   '>
       <section>
         <div className='block md:flex  h-full'>
           <div className=' '>

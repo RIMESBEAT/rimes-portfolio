@@ -45,7 +45,7 @@ const About = () => {
     },
   ];
   return (
-    <div>
+    <div id='about'>
       <div>
         <div className=' flex flex-col justify-center  md:mx-auto w-full  '>
           <FadeInSection>

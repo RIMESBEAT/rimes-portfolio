@@ -7,7 +7,7 @@ import { GiSkills } from 'react-icons/gi';
 import { MdContactPhone } from 'react-icons/md';
 const SubNav = () => {
   return (
-    <div className='fixed z-30 bottom-4  left-0 mx-auto       w-full'>
+    <div className='fixed z-30 bottom-2  left-0 mx-auto       w-full'>
       <div className=' flex justify-center w-full items-center'>
         <Tabs
           radius='full'
@@ -19,6 +19,7 @@ const SubNav = () => {
         >
           <Tab
             key='home'
+            href='#'
             title={
               <div className='flex flex-col items-center justify-center '>
                 <FaHome />
@@ -28,6 +29,7 @@ const SubNav = () => {
           />
           <Tab
             key='about'
+            href='#about'
             title={
               <div className='flex flex-col items-center justify-center '>
                 <SiOnlyoffice />
@@ -37,6 +39,7 @@ const SubNav = () => {
           />
           <Tab
             key='work'
+            href='#work'
             title={
               <div className='flex flex-col items-center justify-center '>
                 <IoCodeWorkingSharp />
@@ -46,6 +49,7 @@ const SubNav = () => {
           />
           <Tab
             key='skills'
+            href='#skills'
             title={
               <div className='flex flex-col items-center justify-center '>
                 <GiSkills />
@@ -56,6 +60,7 @@ const SubNav = () => {
           />
           <Tab
             key='contact'
+            href='/#about'
             title={
               <div className='flex flex-col items-center justify-center space-x-2'>
                 <MdContactPhone />
