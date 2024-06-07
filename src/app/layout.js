@@ -17,10 +17,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en' suppressHydrationWarning>
+    <html lang='en' suppressHydrationWarning className='scroll-smooth'>
       <body className={queenFont.className}>
         <NextUIProvider>
-          <div className=' xs:px-5 px-10 md:px-14 lg:px-20 bg-grayAccent   min-w-full scroll-smooth'>
+          <div className=' xs:px-5 px-10 md:px-14 lg:px-20 bg-gradient-to-tr from-purpleGrayAccent   to-purpleAccent text-whiteAccent   min-w-full '>
             <Header />
 
             <main className=''>{children}</main>

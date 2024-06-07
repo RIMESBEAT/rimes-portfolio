@@ -16,13 +16,14 @@ module.exports = {
       },
 
       colors: {
-        primary: '#141414',
-        grayAccent: '#abacad',
-        redAccent: '#d7263d',
         whiteAccent: '#f5f3f5',
+        purpleAccent: '#201740',
+        purpleLightAccent: '#6E34BF',
+        purpleGrayAccent: '#42208C',
+        yellowAccent: '#F2A20C',
       },
       screens: {
-        'xs': { raw: '(max-width: 550px)' },
+        xs: { raw: '(max-width: 550px)' },
       },
     },
   },

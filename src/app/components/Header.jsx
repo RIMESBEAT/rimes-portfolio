@@ -4,15 +4,15 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <nav className='md:flex justify-between sticky z-30 -top-1 hidden   py-5 w-full bg-grayAccent'>
-      <div className=' text-balance text-black'>
+    <nav className='md:flex justify-between sticky z-30 -top-1 hidden   py-5 w-full '>
+      <div className=' text-balance '>
         <h1 className=' font-extrabold text-xl text-redAccent'>
           Elijah
-          <span className='font-bold ml-2 text-md text-black'>Isaiah</span>
+          <span className='font-bold ml-2 text-md '>Isaiah</span>
         </h1>
       </div>
 
-      <div className='text-primary flex-row flex gap-4'>
+      <div className=' flex-row flex gap-4'>
         <div>
           <Link href='/'>Home</Link>
         </div>
@@ -34,7 +34,7 @@ const Header = () => {
 
       <div>
         <Link
-          className=' bg-redAccent p-2 uppercase rounded-md text-whiteAccent '
+          className=' bg-blue p-2 uppercase rounded-md text-whiteAccent '
           href='/'
         >
           Resume

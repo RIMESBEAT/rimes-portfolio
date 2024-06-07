@@ -16,7 +16,7 @@ import FadeInSection from './animation/FadeInOut';
 
 const Profile = () => {
   return (
-    <div className='sticky top-20 right-8 min-w-fit   ' >
+    <div className='sticky top-20 right-8 min-w-fit   '>
       <FadeInSection>
         <div className='  border-none md:border xs:pt-10  rounded-xl hover:border-redAccent  backdrop:blur-lg xs:bg-transparent bg-white/10 w-ful md:w-max flex justify-center items-start'>
           <div className='p-4 flex md:block xs:block gap-4'>
@@ -42,22 +42,22 @@ const Profile = () => {
               </div>
 
               <div className='flex flex-row gap-2 mt-3 justify-center'>
-                <Tooltip color='danger' content='X (Twitter)'>
+                <Tooltip className='bg-yellowAccent' content='X (Twitter)'>
                   <Link href=''>
                     <FaTwitter className='size-10 hover:border-redAccent   delay-100 transition-all hover:text-redAccent  rounded-md  border p-2 ' />
                   </Link>
                 </Tooltip>
-                <Tooltip color='danger' content='Linked-In'>
+                <Tooltip className='bg-yellowAccent' content='Linked-In'>
                   <Link href=''>
                     <FaLinkedin className='size-10 hover:border-redAccent   rounded-md hover:text-redAccent  delay-100 transition-all border p-2 ' />
                   </Link>
                 </Tooltip>
-                <Tooltip color='danger' content='GitHub'>
+                <Tooltip className='bg-yellowAccent' content='GitHub'>
                   <Link href=''>
                     <FaGithub className='size-10 border hover:border-redAccent hover:text-redAccent rounded-md   delay-100 transition-all p-2 ' />
                   </Link>
                 </Tooltip>
-                <Tooltip color='danger' content='Instagram'>
+                <Tooltip className='bg-yellowAccent' content='Instagram'>
                   <Link href=''>
                     <FaInstagram className='size-10 border hover:border-redAccent hover:text-redAccent  rounded-md    delay-100 transition-all  p-2 ' />
                   </Link>
@@ -65,11 +65,11 @@ const Profile = () => {
               </div>
               <div className='mt-4'>
                 <Link
-                  className=' flex w-full items-center rounded-md bg-primary hover:bg-redAccent justify-center gap-4'
+                  className=' flex w-full items-center rounded-md bg-yellowAccent hover:bg-redAccent justify-center gap-4'
                   href=''
                 >
-                  <FaDownload className=' text-whiteAccent' />
-                  <p className='   text-whiteAccent py-2 '> Download CV</p>
+                  <FaDownload className=' text-purpleAccent' />
+                  <p className='   text-purpleAccent py-2 '> Download CV</p>
                 </Link>
               </div>
             </div>

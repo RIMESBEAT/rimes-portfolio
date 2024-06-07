@@ -49,7 +49,7 @@ const About = () => {
       <div>
         <div className='py-20 flex flex-col justify-center  md:mx-auto w-full    '>
           <FadeInSection>
-            <div className='flex gap-2 flex-row items-center mx-auto md:mx-0  bg-redAccent w-fit p-1 rounded-md font-bold text-sm text-whiteAccent mt-10'>
+            <div className='bg-yellowAccent text-purpleAccent flex gap-2 flex-row items-center mx-auto md:mx-0  w-fit p-1 rounded-md font-bold text-sm   mt-10'>
               <FaAtom />
               <h1 className=' '>About Me</h1>
             </div>
@@ -80,13 +80,13 @@ const About = () => {
           <section className='  py-2 block  mt-6 w-full  lg:flex  items-center justify-between'>
             <div className='  flex  xs:gap-2 gap-4 justify-center md:justify-between'>
               <div className='flex items-center gap-3 '>
-                <p className='text-6xl inline-block font-bold text-redAccent'>
+                <p className='  text-yellowAccent text-6xl inline-block font-bold text-redAccent'>
                   3
                 </p>
                 <p className='text-md font-bold'>Years of Experience</p>
               </div>
               <div className='flex items-center gap-3'>
-                <p className='text-6xl font-bold text-redAccent'>5</p>
+                <p className='text-6xl font-bold text-yellowAccent'>5</p>
                 <p className='text-lg   font-bold'>Projects completed</p>
               </div>
             </div>
