@@ -19,8 +19,7 @@ export default function Home() {
           </div>
 
           <div className='md:ml-10 min-h-screen'>
-            
-            <div>
+            <div >
               <About />
             </div>
             <div>

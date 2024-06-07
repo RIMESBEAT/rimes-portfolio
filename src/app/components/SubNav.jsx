@@ -60,7 +60,7 @@ const SubNav = () => {
           />
           <Tab
             key='contact'
-            href='/#about'
+            href='#about'
             title={
               <div className='flex flex-col items-center justify-center space-x-2'>
                 <MdContactPhone />

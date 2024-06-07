@@ -34,17 +34,17 @@ const MyProject = () => {
     },
   ];
   return (
-    <div id='work' className='flex flex-col  '>
+    <section id='work' className='flex flex-col  py-20 '>
       <FadeInSection>
-           <div className='flex gap-2 flex-row items-center mx-auto md:mx-0  bg-redAccent w-fit p-1 rounded-md font-bold text-sm text-whiteAccent mt-10'>
-        <FaAtom />
-        <h1 className=' '>My Projects</h1>
-      </div>
-      <p className='font-bold mt-10 text-2xl w-full    text-darkPurpleAccent my-4 capitalize'>
-        Some of my projects:
-      </p>  
+        <div className='flex gap-2 flex-row items-center mx-auto md:mx-0  bg-redAccent w-fit p-1 rounded-md font-bold text-sm text-whiteAccent mt-10'>
+          <FaAtom />
+          <h1 className=' '>My Projects</h1>
+        </div>
+        <p className='font-bold mt-10 text-2xl w-full    text-darkPurpleAccent my-4 capitalize'>
+          Some of my projects:
+        </p>
       </FadeInSection>
- 
+
       <FadeInSection>
         {' '}
         <div className='grid my-10 grid-cols-2 xs:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4'>
@@ -107,7 +107,7 @@ const MyProject = () => {
           ))}
         </div>
       </FadeInSection>
-    </div>
+    </section>
   );
 };
 

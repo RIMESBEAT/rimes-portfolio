@@ -115,7 +115,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className='h-full grid-cols-1' id='skills'>
+    <div className='h-full grid-cols-1 py-20' id='skills'>
       <FadeInSection>
         <div className='flex gap-2 flex-row items-center mx-auto md:mx-0  bg-redAccent w-fit p-1 rounded-md font-bold text-sm text-whiteAccent mt-10'>
           <FaAtom />

@@ -16,7 +16,7 @@ import FadeInSection from './animation/FadeInOut';
 
 const Profile = () => {
   return (
-    <div className='sticky top-20 right-8 min-w-fit   '>
+    <div className='sticky top-20 right-8 min-w-fit   ' >
       <FadeInSection>
         <div className='  border-none md:border xs:pt-10  rounded-xl hover:border-redAccent  backdrop:blur-lg xs:bg-transparent bg-white/10 w-ful md:w-max flex justify-center items-start'>
           <div className='p-4 flex md:block xs:block gap-4'>

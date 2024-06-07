@@ -5,9 +5,9 @@ import { FaAtom } from 'react-icons/fa';
 
 const ContactMe = () => {
   return (
-    <div id='contact' className=' w-full '>
+    <div id='contact' className=' w-full py-20'>
       <FadeInSection>
-        <div className='flex gap-2 flex-row items-center mx-auto md:mx-0  bg-redAccent w-fit p-1 rounded-md font-bold text-sm text-whiteAccent mt-10'>
+        <div className='  flex gap-2 flex-row items-center mx-auto md:mx-0  bg-redAccent w-fit p-1 rounded-md font-bold text-sm text-whiteAccent mt-10'>
           <FaAtom />
           <h1 className=' '>Contact Me</h1>
         </div>

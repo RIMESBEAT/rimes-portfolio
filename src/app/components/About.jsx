@@ -45,9 +45,9 @@ const About = () => {
     },
   ];
   return (
-    <div id='about'>
+    <section id='about'>
       <div>
-        <div className=' flex flex-col justify-center  md:mx-auto w-full  '>
+        <div className='py-20 flex flex-col justify-center  md:mx-auto w-full    '>
           <FadeInSection>
             <div className='flex gap-2 flex-row items-center mx-auto md:mx-0  bg-redAccent w-fit p-1 rounded-md font-bold text-sm text-whiteAccent mt-10'>
               <FaAtom />
@@ -111,7 +111,7 @@ const About = () => {
           </section>
         </FadeInSection>
       </div>
-    </div>
+    </section>
   );
 };
 

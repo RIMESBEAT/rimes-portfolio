@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
     <html lang='en' suppressHydrationWarning>
       <body className={queenFont.className}>
         <NextUIProvider>
-          <div className=' xs:px-5 px-10 md:px-14 lg:px-20 bg-grayAccent   min-w-full'>
+          <div className=' xs:px-5 px-10 md:px-14 lg:px-20 bg-grayAccent   min-w-full scroll-smooth'>
             <Header />
 
             <main className=''>{children}</main>
